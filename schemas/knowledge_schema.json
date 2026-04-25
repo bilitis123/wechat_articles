@@ -1,0 +1,49 @@
+{
+  "topic_chunk": {
+    "required": [
+      "chunk_id",
+      "article_id",
+      "source_url",
+      "topic_tags",
+      "chunk_text",
+      "keywords",
+      "confidence",
+      "embedding_model",
+      "embedding_vector_ref",
+      "index_status"
+    ],
+    "index_status_enum": ["pending", "indexed", "failed"]
+  },
+  "term_glossary": {
+    "required": [
+      "term",
+      "definition",
+      "scope",
+      "example_sentence",
+      "source_refs",
+      "version",
+      "score",
+      "conflict_candidates",
+      "embedding_model",
+      "embedding_vector_ref",
+      "index_status"
+    ],
+    "index_status_enum": ["pending", "indexed", "failed"]
+  },
+  "article_record": {
+    "required": [
+      "article_id",
+      "source_url",
+      "crawl_time",
+      "parser_version",
+      "title",
+      "author",
+      "account_name",
+      "publish_time",
+      "content_text",
+      "clean_text",
+      "quality_passed",
+      "quality_flags"
+    ]
+  }
+}
